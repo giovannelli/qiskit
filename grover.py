@@ -50,7 +50,7 @@ grover_circuit.draw()
 #                                     0  1 
 
 
-token = "cd269c86b52226ec5492ca7775cd5bb5811d0527ac73961c4b13bf3b68ea2a9571c2ba57a28bbb7098cdd1699be1549de9f508ca471e22ae88fd9572d5d05937"
+token = "YOUR_TOKEN"
 IBMQ.save_account(token)
 provider = IBMQ.load_account()
 
