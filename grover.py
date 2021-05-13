@@ -55,7 +55,7 @@ IBMQ.save_account(token)
 provider = IBMQ.load_account()
 
 device = least_busy(provider.backends(filters=lambda x: x.configuration().n_qubits >= 3 and 
-                                      not x.configuration().simulator and x.status().operational==True)
+                                      not x.configuration().simulator and x.status().operational==True))
 
 
 job = execute(grover_circuit, backend=device, shots=1)
